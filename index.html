@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Tracker</h2>
+        <label for="dateSelector">Select Date:</label>
+        <input type="date" id="dateSelector">
+        <br><br>
+
+        <canvas id="bmiChart"></canvas>
+        <div id="result"></div>
+        <form id="registrationForm">
+            <label for="height">Height (cm):</label><br><br>
+<div class="input_box">
+            <input type="number" id="height" name="height"  placeholder ="input here" required><br><br>
+</div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+
+            <label for="weight">Weight (kg):</label><br><br>
+<div class="input_box">
+            <input type="number" id="weight" name="weight" placeholder ="input here" required><br><br>
+</div>
+            <button type="submit">Submit</button>
+            <button type="reset" id="resetBtn">Reset</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
